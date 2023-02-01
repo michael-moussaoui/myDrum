@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>MyDrum</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+        
+		<h1 class="text-center mt-5 mb-5">My Drum</h1>
+        <div class="sample text-center mb-2">
+            <button onClick="togglePlay1()"  class="btn s1"><audio id="sample1"  src="sounds/sample1.mp3"></audio>Sample1</button>
+            <button onClick="togglePlay2()"  class="btn s2"><audio id="sample2"  src="sounds/sample2.wav"></audio>Sample2</button> 
+            <button onClick="togglePlay3()"  class="btn s3"><audio id="sample3"  src="sounds/piano1.mp3"></audio>Sample3</button>
+        </div>
+		<div class="boxContainer">
+            <div data-key="97" class=" box n1">1</div>
+			<div data-key="98" class=" box n2">2</div>
+			<div data-key="99" class=" box n3">3</div>
+
+			<div data-key="100" class=" box n4">4</div>
+			<div data-key="101" class=" box n5">5</div>
+			<div data-key="102" class=" box n6">6</div>
+
+			<div data-key="103" class=" box n7">7</div>
+			<div data-key="104" class=" box n8">8</div>
+			<div data-key="105" class=" box n9">9</di>
+        </div>
+
+        <audio data-key="97"  src="sounds/piano1.mp3"></audio>
+        <audio data-key="98"  src="sounds/drum1.wav"></audio>
+        <audio data-key="99"  src="sounds/drum2.wav"></audio>
+        <audio data-key="100"  src="sounds/drum3.wav"></audio>
+        <audio data-key="101"  src="sounds/drum4.wav"></audio>
+        <audio data-key="102"  src="sounds/drum5.wav"></audio>
+        <audio data-key="103"  src="sounds/drum6.wav"></audio>
+        <audio data-key="104"  src="sounds/drum7.wav"></audio>
+        <audio data-key="105"  src="sounds/drum1.wav"></audio>
+
+        
+
+	</body>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"
+	></script>
+	<script src="app.js"></script>
+</html>
